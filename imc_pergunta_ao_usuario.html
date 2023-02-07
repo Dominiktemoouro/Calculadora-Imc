@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha(){
+
+        document.write("<br>");
+
+    }
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+    let nome = prompt("Qual o seu nome?")
+    let altura = prompt("Informe sua altura? exemplo: 1.86");
+    let peso = prompt("Informe o seu peso?");
+
+    let calculaImc = Math.round(peso / (altura * altura));
+    
+
+    mostra(nome + " o seu imc calculado é " + calculaImc);
+
+
+        if(calculaImc < 18.5){
+            document.write9("Você está abaixo do recomendado");
+
+        }  
+        if(calculaImc > 35){
+            mostra("Você está acima do recomendo");
+            // condição && as duas tem que ser true
+            //     true   e  true
+        } if(calculaImc >= 18.5 && calculaImc <=35){  
+                mostra("Seu peso esta excelente!")
+
+        }
+
+
+     </script>
